@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
   def answer
     @question = params[:question]
     if @question == "I am going to work"
-      @answer = "great!"
+      @answer = "great, FINALLY!"
     elsif @question.strip.split("").last == "?"
       @answer = "Stupid question, get dressed and go to work!"
     else
